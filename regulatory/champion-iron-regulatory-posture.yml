@@ -1,0 +1,90 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.championiron.com/privacy-policy/
+note: >-
+  Champion Iron publishes a website/recruitment privacy policy (last updated March 17, 2025), terms and
+  conditions, and a cookie policy. It names no API, platform or subprocessor list; the signals below are
+  for its corporate website and recruitment program only. The pages do not mention AI, incident/breach
+  notification to individuals, Global Privacy Control, accessibility conformance, or portability.
+signals:
+  data_subject_request:
+    url: https://www.championiron.com/privacy-policy/
+    section: '8. YOUR LEGAL RIGHTS'
+    rights_named: [access, rectification, withdrawal of consent]
+    channel: Privacy Officer (contact details in section 10 of the policy)
+    evidence:
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You have the right to access the personal information we hold about you and to receive a general
+        account of our uses of that personal information. Upon receipt of a written request from you, we will
+        provide you with a copy of your personal information, although in certain limited circumstances, we
+        may not be able to make all relevant personal information available to you, for example, where that
+        personal information also relates to another individual.
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If the personal information we hold about you is inaccurate or incomplete, you are entitled to have it
+        rectified.
+    note: >-
+      Access and rectification rights on written request, plus consent withdrawal. No stated response
+      deadline ("in a timely manner") and no deletion or portability right is named in section 8.
+  subprocessors:
+    url: https://www.championiron.com/privacy-policy/
+    section: '3. COMMUNICATION OF YOUR PERSONAL INFORMATION TO THIRD PARTIES'
+    evidence:
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We do not allow our third-party service providers to use your personal information for their own
+        purposes; where applicable, we only permit them to process your personal information for specified
+        purposes and in accordance with our instructions.
+    note: >-
+      Categories of service providers (server hosting, visitor/job-applicant analytics) are described, but
+      no named subprocessor list is published.
+  data_residency:
+    url: https://www.championiron.com/privacy-policy/
+    section: '4. CROSS-JURISDICTIONAL TRANSFERS'
+    evidence:
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        By providing us with personal information, you acknowledge and agree that your personal information
+        may be transferred to other jurisdictions for processing and storage, including in servers located
+        across Canada, the United States or elsewhere in the world, where laws regarding the protection of
+        personal information may be less stringent than the laws in your jurisdiction.
+    note: No residency commitment; the policy discloses that data may be stored outside Canada.
+  data_retention:
+    url: https://www.championiron.com/privacy-policy/
+    section: '6. HOW LONG WILL WE RETAIN YOUR PERSONAL INFORMATION?'
+    evidence:
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        The Company only keeps personal information for as long as necessary and for the purposes it was
+        collected, or for as long as required to comply with any applicable legal obligation and its document
+        retention policies.
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        When the personal information collected is no longer required by the Company, the necessary
+        procedures for destroying, deleting, erasing, or converting it into an anonymous form are applied.
+    note: Purpose-limited retention with destruction or anonymisation; no fixed periods are stated.
+  age_assurance:
+    url: https://www.championiron.com/privacy-policy/
+    section: '7. PROTECTION OF CHILDREN’S PERSONAL INFORMATION'
+    evidence:
+    - source: https://www.championiron.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We do not knowingly collect any information from persons under the age of 14. If we become aware that
+        we have collected any personal information from a person under the age of 14, we will delete that
+        information.
+    note: An age threshold (14) with deletion on discovery; no age-verification mechanism is described.

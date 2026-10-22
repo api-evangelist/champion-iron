@@ -1,0 +1,29 @@
+name: Champion Iron MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+source:
+- https://www.championiron.com/.well-known/mcp.json
+description: >-
+  Checked for an official Champion Iron MCP server and found none. Champion Iron Limited is an
+  iron ore producer (Bloom Lake, Québec; Rana Gruber, Norway) and publishes no public API,
+  developer portal or API documentation. On 2026-10-21, https://www.championiron.com/.well-known/mcp.json,
+  /.well-known/mcp/server.json, /AGENTS.md and /.well-known/agent-skills/index.json all returned HTTP 404.
+  The pre-flight contract discovery on championiron.com, www.championiron.com, newsroom.championiron.com
+  and api.championiron.com found no MCP, OpenAPI, AsyncAPI or GraphQL surface. A web search for a
+  Champion Iron MCP server or API found nothing from the company. There is no OpenAPI to derive
+  a candidate tool list from, so this file lists no tools.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+probes:
+- url: https://www.championiron.com/.well-known/mcp.json
+  status: 404
+- url: https://www.championiron.com/.well-known/mcp/server.json
+  status: 404
+- url: https://www.championiron.com/AGENTS.md
+  status: 404
+- url: https://www.championiron.com/.well-known/agent-skills/index.json
+  status: 404

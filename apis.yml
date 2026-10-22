@@ -1,23 +1,98 @@
 aid: champion-iron
+
 name: Champion Iron
-description: 'Champion Iron is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Champion Iron Limited (TSX: CIA, ASX: CIA, OTCQX: CIAFF) is a high-purity iron ore producer with operations
+  in Canada and Norway. Through its subsidiary Quebec Iron Ore Inc. it owns and operates the Bloom Lake Mining Complex near
+  Fermont, Québec, an open-pit operation with two concentration plants (15M wmt/yr nameplate capacity) that produces low-contaminant,
+  direct-reduction-grade iron ore concentrate shipped by rail to Sept-Îles. It also operates Rana Gruber in Mo i Rana, Norway,
+  and holds growth projects including Kamistiatusset (Kami) in Newfoundland and Labrador. Head office is in Rozelle, NSW,
+  Australia, with Canadian offices in Montréal, Toronto and Québec City. The company publishes no public API, developer portal
+  or API documentation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/champion-iron/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Iron Ore
+- Metals
+- Natural Resources
+- Steel Supply Chain
+- Canada
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.championiron.com/wp-content/uploads/2017/04/champion-iron.png
+
 common:
+- type: Hosts
+  url: hosts/champion-iron-hosts.yml
+- type: Vendors
+  url: vendors/champion-iron-vendors.yml
+- type: DomainSecurity
+  url: security/champion-iron-domain-security.yml
 - type: Website
-  url: https://championiron.com/
+  url: https://www.championiron.com/
+- type: Newsroom
+  url: https://newsroom.championiron.com/
+- type: Investors
+  url: https://www.championiron.com/investors/
+- type: Support
+  url: https://www.championiron.com/contact/
+- type: FAQ
+  url: https://www.championiron.com/frequently-asked-questions/
+- type: TermsOfService
+  url: https://www.championiron.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.championiron.com/privacy-policy/
+- type: CookiePolicy
+  url: https://www.championiron.com/cookie-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/1809213
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website and identity verified from championiron.com (title "Champion Iron | Iron ore mine | Mining company | Quebec",
+    company-information page). No API, developer portal or API docs published; link pointers limited to corporate pages that
+    returned 200.
+  evidence:
+  - url: https://championiron.com/
+    status: 200
+  - url: https://www.championiron.com/corporate-profile/company-information/
+    status: 200
+  - url: https://newsroom.championiron.com/
+    status: 200
+  - url: https://www.championiron.com/terms-and-conditions/
+    status: 200
+  - url: https://www.championiron.com/privacy-policy/
+    status: 200
+  - url: https://www.championiron.com/contact/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
